@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Nakamura Kiaraawrrr</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .left-section, .right-section {
+            padding: 20px;
+        }
+
+        .left-section {
+            background-color: #f4f4f4;
+            width: 35%;
+        }
+
+        .right-section {
+            width: 65%;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 15px;
+            animation: bounce 2s infinite;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            color: #ff6600;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section h3 {
+            margin: 10px 0;
+            color: #ff6600;
+        }
+
+        .skills span {
+            display: block;
+            margin: 5px 0;
+        }
+
+        .progress {
+            background-color: #ddd;
+            border-radius: 4px;
+            overflow: hidden;
+            position: relative;
+            height: 10px;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background-color: #ff6600;
+            animation: grow 2s ease-in-out;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @keyframes grow {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <div class="header">
+                <img src="https://via.placeholder.com/100" alt="Avatar">
+                <h1>Nakamura Kiaraawrrr</h1>
+            </div>
+            <div class="section">
+                <h3>Data Pribadi</h3>
+                <p><strong>Tempat/Tanggal Lahir:</strong> Isekai, 13 Desember 2085</p>
+                <p><strong>Jenis Kelamin:</strong> Perempuan</p>
+                <p><strong>Agama:</strong> Atletis</p>
+                <p><strong>Kewarganegaraan:</strong> Kwek Kwek Land</p>
+            </div>
+            <div class="section">
+                <h3>Kontak</h3>
+                <p><strong>Phone:</strong> 086362153615</p>
+                <p><strong>Email:</strong> kiaraawrrr@gmail.com</p>
+            </div>
+            <div class="section">
+                <h3>Skill</h3>
+                <div class="skills">
+                    <span>Manipulasi Pikiran</span>
+                    <div class="progress"><div class="progress-bar" style="width: 90%;"></div></div>
+
+                    <span>Menangis</span>
+                    <div class="progress"><div class="progress-bar" style="width: 80%;"></div></div>
+
+                    <span>Merepotkan Orang</span>
+                    <div class="progress"><div class="progress-bar" style="width: 70%;"></div></div>
+
+                    <span>Tidur Secara Tiba-tiba</span>
+                    <div class="progress"><div class="progress-bar" style="width: 100%;"></div></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-section">
+            <div class="section">
+                <h3>Profil</h3>
+                <p>Saya adalah seekor bebek kecil yang siap dibakar kapan saja. Saya siap bekerja baik di darat maupun di air. Jangan lupa beri saya makan biar saya tidak kecil lagi. Ehek.</p>
+            </div>
+            <div class="section">
+                <h3>Riwayat Pendidikan</h3>
+                <p><strong>S1 Universitas Tidur Berjaya:</strong> 2012 - 2015</p>
+                <p><strong>SMK Sekolah Menengah Ketiduran:</strong> 2016 - 2024</p>
+            </div>
+
+            <div class="section">
+                <h3>Hobi</h3>
+                <ul>
+                    <li>Tidur</li>
+                    <li>Menangis</li>
+                    <li>Main Game</li>
+                    <li>Nangis Lagi</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.progress-bar').forEach(bar => {
+            bar.style.transition = 'width 2s';
+        });
+
+        document.querySelector('.header img').addEventListener('click', () => {
+            alert('Quack quack! You clicked on Kiara!');
+        });
+    </script>
+</body>
+</html>
